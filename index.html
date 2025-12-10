@@ -170,11 +170,11 @@
                         <table class="details-table">
                             <tr>
                                 <td class="lbl-cell">Name</td>
-                                <td class="val-cell">: <span id="viewName">Abdul Basit</span></td>
+                                <td class="val-cell">: <span id="viewName">Student Name</span></td>
                             </tr>
                             <tr>
                                 <td class="lbl-cell">Father Name</td>
-                                <td class="val-cell">: <span id="viewFather">Ali Asghar Bhurt</span></td>
+                                <td class="val-cell">: <span id="viewFather">Father Name</span></td>
                             </tr>
                             <tr>
                                 <td class="lbl-cell">Designation</td>
@@ -229,19 +229,19 @@
                          <table class="details-table">
                             <tr>
                                 <td class="lbl-cell">Name</td>
-                                <td class="val-cell">: <span id="viewNameBack">Abdul Basit</span></td>
+                                <td class="val-cell">: <span id="viewNameBack">Student Name</span></td>
                             </tr>
                             <tr>
                                 <td class="lbl-cell">Father Name</td>
-                                <td class="val-cell">: <span id="viewFatherBack">Ali Asghar Bhurt</span></td>
+                                <td class="val-cell">: <span id="viewFatherBack">Father Name</span></td>
                             </tr>
                             <tr>
                                 <td class="lbl-cell">CNIC</td>
-                                <td class="val-cell">: <span id="viewCnic">45304-7771542-7</span></td>
+                                <td class="val-cell">: <span id="viewCnic">xxxxx-xxxxxxx-x</span></td>
                             </tr>
                             <tr>
                                 <td class="lbl-cell">Date of Birth</td>
-                                <td class="val-cell">: <span id="viewDob">11/10/2008</span></td>
+                                <td class="val-cell">: <span id="viewDob">dd/mm/yyyy</span></td>
                             </tr>
                             <tr>
                                 <td class="lbl-cell">Blood Group</td>
@@ -249,7 +249,7 @@
                             </tr>
                             <tr>
                                 <td class="lbl-cell">Contact NO</td>
-                                <td class="val-cell">: <span id="viewContact">+92 3053226266</span></td>
+                                <td class="val-cell">: <span id="viewContact">+92 3xxxxxxxxx</span></td>
                             </tr>
                             <tr>
                                 <td class="lbl-cell">Address</td>
@@ -277,22 +277,22 @@
                 return val ? val : defaultVal;
             };
 
-            document.getElementById('viewName').innerText = getVal('name', 'Abdul Basit');
-            document.getElementById('viewNameBack').innerText = getVal('name', 'Abdul Basit');
+            document.getElementById('viewName').innerText = getVal('name', 'Student Name');
+            document.getElementById('viewNameBack').innerText = getVal('name', 'Student Name');
 
-            document.getElementById('viewFather').innerText = getVal('fatherName', 'Ali Asghar Bhurt');
-            document.getElementById('viewFatherBack').innerText = getVal('fatherName', 'Ali Asghar Bhurt');
+            document.getElementById('viewFather').innerText = getVal('fatherName', 'Father Name');
+            document.getElementById('viewFatherBack').innerText = getVal('fatherName', 'Father Name');
 
             document.getElementById('viewDesignation').innerText = getVal('designation', 'Boy Scout');
             document.getElementById('viewUnit').innerText = getVal('unit', 'Govt: Madd: & campus high school Naushahro feroze');
-            document.getElementById('viewCnic').innerText = getVal('cnic', '45304-7771542-7');
+            document.getElementById('viewCnic').innerText = getVal('cnic', 'xxxxx-xxxxxxx-x');
 
             const dobVal = document.getElementById('dob').value;
-            const dobDisplay = dobVal ? new Date(dobVal).toLocaleDateString('en-GB') : '11/10/2008';
+            const dobDisplay = dobVal ? new Date(dobVal).toLocaleDateString('en-GB') : 'dd/mm/yyyy';
             document.getElementById('viewDob').innerText = dobDisplay;
 
             document.getElementById('viewBlood').innerText = getVal('bloodGroup', 'B +ve');
-            document.getElementById('viewContact').innerText = getVal('contact', '+92 3053226266');
+            document.getElementById('viewContact').innerText = getVal('contact', '+92 3xxxxxxxxx');
             document.getElementById('viewAddress').innerText = getVal('address', 'College Road Naushahro feroze');
             document.getElementById('viewValid').innerText = getVal('validYears', 'Three');
         }
